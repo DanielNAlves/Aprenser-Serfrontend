@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  width: 100vw;
+  overflow-x: hidden;
+  --colorHeader: #2a2a2a;
+  --textoMenu: #f6ca03;
+  --padraoColor: #fff;
+  --corFundoCursos: #e5d9d9c6;
+  --corFundoEscola: #003464;
+}
+
+.cabecalho {
+  background-color: var(--colorHeader);
+  display: flex;
+  padding: 0 1.6rem 1.8rem;
+  justify-content: space-around;
+  align-items: center;
+  height: 15%;
+  width: 100%;
+}
+
+.cabecalho__logo {
+  background-image: url(./imagens/logoAprenser.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 15vw;
+  height: 12vh;
+}
+
+.header__list {
+  display: flex;
+  list-style-type: none;
+  font-size: 1.2rem;
+  gap: 1.8rem;
+}
+
+.menu__list-item {
+  flex-grow: 1;
+  font-size: 1.6rem;
+  color: var(--textoMenu);
+  list-style-type: none;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+.menu__cabecalho a {
+  color: var(--colorMenu);
+  text-decoration: none;
+  border: solid 1px var(--textoMenu);
+  padding: 1rem;
+}
+
+/* Conteudo */
+
+.detalhe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, #ffee05, #fff);
+  padding-top: 10rem;
+}
+
+.imagem__detalhe {
+  background-image: url(./imagens/HeroImage.png);
+  width: 140rem;
+  height: 62rem;
+  background-repeat: no-repeat;
+}
+
+.titulo__detalhe {
+  font-size: 5rem;
+  margin: 12rem 2rem 0 10rem;
+}
+
+.btn__saibaMais {
+  width: 20rem;
+  margin: 2rem 2rem 0 10rem;
+  padding: 1.7rem;
+  background-color: var(--textoMenu);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/*Principais cursos*/
+
+.titulo__curso {
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 5rem;
+}
+
+.flex {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: auto;
+  gap: 1.6rem;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.flex-item img {
+  width: 34rem;
+  display: inline-block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.Cursos__container {
+  background-color: var(--corFundoCursos);
+}
+
+.info__destaque {
+  border: 0.1rem solid hwb(0 73% 27% / 0.549);
+  width: 34rem;
+}
+
+.info__destaque h2 {
+  font-size: 2rem;
+}
+
+.info__destaque p {
+  font-size: 1.8rem;
+}
+
+.btn__cursos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+}
+
+.info__btnCursos {
+  width: 20rem;
+  padding: 1.7rem;
+  background-color: var(--textoMenu);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+/*Info Escola*/
+
+.info__escola {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  background-color: var(--corFundoEscola);
+  width: 100%;
+  height: 50%;
+  color: var(--padraoColor);
+  margin-bottom: 1rem;
+}
+
+.img__infoEscola {
+  margin: 5rem 0 0 5rem;
+  background-image: url(./imagens/nossa-escola.png);
+  background-repeat: no-repeat;
+  width: 250rem;
+  height: 50rem;
+}
+
+.sobre__escola h1 {
+  font-size: 3rem;
+  margin: 10rem 0 10rem 5rem;
+}
+
+.sobre__escola p {
+  text-align: justify;
+  margin: 0 8rem 5rem 0;
+  font-size: 2rem;
+  width: 50rem;
+}
+
+/*Maps*/
+.mapa {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mapa h1 {
+  text-align: center;
+  padding: 4rem;
+  font-size: 6rem;
+}
+
+.info__contatos {
+  text-align: right;
+  font-size: 2rem;
+  padding: 3rem 6rem;
+}
+
+/* Rodapé */
+.rodape {
+  padding: 2rem 3rem;
+  background-color: var(--colorHeader);
+  color: var(--padraoColor);
+  font-size: 1.8rem;
+  text-align: center;
+}
