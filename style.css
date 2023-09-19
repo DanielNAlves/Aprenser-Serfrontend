@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Belleza&family=Inter:wght@400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,18 +7,29 @@
 }
 
 :root {
-  font-size: 62.5%;
-  width: 100vw;
-  overflow-x: hidden;
-  --colorHeader: #2a2a2a;
-  --textoMenu: #f6ca03;
+  --colorHeaderFooter: #2a2a2a;
+  --corPrimaria: #fed001;
   --padraoColor: #fff;
   --corFundoCursos: #e5d9d9c6;
   --corFundoEscola: #003464;
 }
 
+html {
+  width: 100%;
+  overflow-x: hidden;
+  font: 400 62.5% "Inter", sans-serif;
+}
+
+p,
+a {
+  font-size: 1.6rem;
+}
+.principal {
+  width: 100%;
+}
+
 .cabecalho {
-  background-color: var(--colorHeader);
+  background-color: var(--colorHeaderFooter);
   display: flex;
   padding: 0 1.6rem 1.8rem;
   justify-content: space-around;
@@ -43,7 +56,7 @@
 .menu__list-item {
   flex-grow: 1;
   font-size: 1.6rem;
-  color: var(--textoMenu);
+  color: var(--corPrimaria);
   list-style-type: none;
   flex-direction: column;
   text-transform: uppercase;
@@ -52,20 +65,20 @@
 .menu__cabecalho a {
   color: var(--colorMenu);
   text-decoration: none;
-  border: solid 1px var(--textoMenu);
+  border: solid 1px var(--corPrimaria);
   padding: 1rem;
 }
 
 /* Conteudo */
-
 .detalhe {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-content: space-between;
-  background-image: linear-gradient(to top, #ffee05, #fff);
+  background-image: linear-gradient(to top, #fed001, #fff);
   padding-top: 10rem;
+  width: 100%;
 }
 
 .imagem__detalhe {
@@ -80,11 +93,15 @@
   margin: 12rem 2rem 0 10rem;
 }
 
+.titulo__detalhe span {
+  text-transform: uppercase;
+}
+
 .btn__saibaMais {
   width: 20rem;
   margin: 2rem 2rem 0 10rem;
   padding: 1.7rem;
-  background-color: var(--textoMenu);
+  background-color: var(--corPrimaria);
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -129,10 +146,6 @@
   font-size: 2rem;
 }
 
-.info__destaque p {
-  font-size: 1.8rem;
-}
-
 .btn__cursos {
   display: flex;
   flex-direction: row;
@@ -144,7 +157,7 @@
 .info__btnCursos {
   width: 20rem;
   padding: 1.7rem;
-  background-color: var(--textoMenu);
+  background-color: var(--corPrimaria);
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -187,7 +200,7 @@
   margin: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
@@ -205,8 +218,9 @@
 
 /* Rodapé */
 .rodape {
+  width: 100%;
   padding: 2rem 3rem;
-  background-color: var(--colorHeader);
+  background-color: var(--colorHeaderFooter);
   color: var(--padraoColor);
   font-size: 1.8rem;
   text-align: center;
