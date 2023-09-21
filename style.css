@@ -67,28 +67,30 @@ a {
   padding: 0.75em 1.15em;
 }
 
+.menu__cabecalho a:hover {
+  background-color: #0b0b0bf5;
+}
+
 /* Conteudo */
 .detalhe {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(to top, #fed001, #fff);
-  padding-top: 10rem;
   width: 100%;
 }
 
 .imagem__detalhe {
   background-image: url(./imagens/HeroImage.png);
   width: 140rem;
-  height: 62rem;
+  height: 63rem;
   background-repeat: no-repeat;
 }
 
 .titulo__detalhe {
   font-size: 5rem;
-  margin: 12rem 2rem 0 10rem;
+  margin: 2rem 2rem 0 8rem;
+  padding: 2rem;
 }
 
 .upper {
