@@ -111,26 +111,40 @@ a {
 .titulo__curso {
   text-align: center;
   padding: 5rem 0;
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+.flex-item h3 {
+  font-size: 2.4rem;
+  line-height: 1.5;
+  padding: 2rem 0;
+}
+
+.flex-item p {
+  font-size: 1.8rem;
+  line-height: 1.5;
 }
 
 .flex {
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   margin: auto;
-  gap: 1.6rem;
-  align-items: center;
-  text-align: center;
-  justify-content: space-evenly;
+  gap: 2rem;
+  align-content: space-between;
+  justify-content: center;
+}
+/* .info__destaque {
+  flex: 1;
+} */
+
+.flex-item {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .flex-item img {
-  width: 34rem;
-  display: inline-block;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  display: block;
+  width: 100%;
 }
 
 .Cursos__container {
@@ -138,8 +152,9 @@ a {
 }
 
 .info__destaque {
-  border: 0.1rem solid hwb(0 73% 27% / 0.549);
   width: 34rem;
+  height: 23rem;
+  padding: 1rem 1.25rem;
 }
 
 .info__destaque h2 {
@@ -151,7 +166,7 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 10rem;
+  margin: 7rem 0;
 }
 
 .info__btnCursos {
@@ -217,7 +232,6 @@ a {
 
 /* Rodapé */
 .rodape {
-  width: 100%;
   padding: 2rem 3rem;
   background-color: var(--colorHeaderFooter);
   color: var(--padraoColor);
