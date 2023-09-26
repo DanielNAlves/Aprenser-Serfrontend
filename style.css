@@ -41,6 +41,10 @@ a {
   left: 0;
 }
 
+.container-pedded {
+  padding-top: 12rem;
+}
+
 .cabecalho__logo {
   background-image: url(./imagens/logoAprenser.png);
   background-repeat: no-repeat;
