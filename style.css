@@ -35,8 +35,10 @@ a {
 }
 
 .container-fixed {
-  position: fixed;
+  position: sticky;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .cabecalho__logo {
@@ -88,7 +90,6 @@ a {
   width: 140rem;
   height: 63rem;
   background-repeat: no-repeat;
-  margin-top: 15rem;
 }
 
 .titulo__detalhe {
