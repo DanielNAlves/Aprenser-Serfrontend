@@ -42,7 +42,7 @@ a {
 }
 
 .container-pedded {
-  padding-top: 12rem;
+  padding-top: 10rem;
 }
 
 .cabecalho__logo {
@@ -51,6 +51,7 @@ a {
   overflow: hidden;
   width: 15vw;
   height: 12vh;
+  cursor: pointer;
 }
 
 .header__list {
